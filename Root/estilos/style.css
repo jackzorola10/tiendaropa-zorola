@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300&family=Staatliches&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;     /* Removes link-like view */
+} 
+
+body{
+    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-repeat: repeat;
+    background-position: left;
+    background-attachment: fixed;
+}
+
+.btnPrimary{
+    min-width: 300px;
+    min-height: 60px;
+    background-color: #EE6C4D;
+    border-radius: 10px;
+    font-family: 'Staatliches', cursive; 
+    font-size: 32px;
+    color: #E0FBFC;
+    border-width: 3px;
+    border-color: #90F1F4;
+}
+
+.btnSecondary{
+    display: block;
+    min-width: 150px;
+    min-height: 30px;
+    background-color: #EE6C4D;
+    border-radius: 10px;
+    font-family: 'Staatliches', cursive; 
+    font-size: 18px;
+    color: #E0FBFC;
+    border-width: 3px;
+    border-color: #90F1F4;
+}
+
+/* ###### MENU ##### */
+
+
+
+nav {
+    background-color: #ee6c4d;
+    width: 100%;
+    z-index: 10;
+}
+
+ul {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    float: right;
+    font-family: 'Staatliches', cursive;    
+    color: #e0fbfc;
+    border-radius: 8px;
+}
+
+ul:hover{
+    background-color: #e03d15;
+}
+
+i {
+    padding-left: 5px;
+}
+
+ul li { /* No me jalo :c */
+    list-style-type: none; /* Quita los bullets */
+    background-color: darkblue;
+    display: none;
+    text-align: center;
+    width: 200px;
+    padding: 5px;
+}
+
+
+ul li:hover {    /* No me jalo :c */
+    display: block;
+}
+
+a {
+    color: #e0fbfc;
+}
+
+
+
+
+/* ###### HERO - HEADER ##### */
+
+.hero1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#banner { /*SHARES HERO SPACE */
+    max-width: 800px;
+    border-radius: 10px;
+    margin: 30px 60px 30px 60px;
+}
+
+.titles{ /*SHARES HERO SPACE */
+    margin: 60px 60px 30px 60px;
+
+}
+
+.titles h1{
+    font-family: 'Anton', sans-serif; 
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.titles h3{
+    font-family: 'Oswald', sans-serif; 
+    font-size: 24px;
+    margin-bottom: 30px;
+
+}
+
+
+
+/* ###### PRODUCTS ##### */
+
+
+.shirtRow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.productRow{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.shirtRow h2{
+    display: block;
+    font-size: 32px;
+    font-family: 'Staatliches', cursive;
+}
+
+.product {
+    display: inline-block;
+    margin-right: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product img{
+    width: 150px;
+    border-radius: 8px;
+    display: block;
+}
+
+.product img:hover{
+    filter: blur(4px);
+}
+
+.productName{
+    display: inline;
+}
+
+.product i{
+    display: inline;
+    color: #293241;
+}
+
+.product i:hover{
+    color: #56698A;
+}
+
+/* ###### FOOTER ##### */
+
+footer{
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #293241;
+    width: 100%;
+    color: #e0fbfc;
+    padding: 20px;
+}
+
+footer p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer h2{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    margin-right: 24px;
+}
+
+.socials{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.newsletter{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+form input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    width: 200px;
+    height: 32px;
+    border-color: darkcyan;
+    border-width: 3px;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Staatliches', cursive; 
+    text-transform: uppercase;
+}
+
+/* ###### CART ##### */
+
+.carritoTitle{
+    font-family: 'Anton', sans-serif; 
+    font-size: 72px;
+    margin: 30px 0 30px 30px;
+}
+
+.carritoHandler{
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.cartProduct {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px 10px 10px 10px;
+    border-width: 0 0 3px 0;
+    border-color: #98C1D9;
+}
+
+.cartProduct img{        /*This is the important block  1 of 2*/
+    width: 80px;
+    border-radius: 8px;
+}
+
+.cartProductInfo{       /*This is the important block  2 of 2*/
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 100%;
+    margin-left: 10px;
+
+}
+
+.cartProductName{
+    font-family: 'Oswald', sans-serif; 
+    font-size: 28px;
+    color:#293241;
+    position: relative;
+}
+
+.cartProductMiniInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+    font-family: 'Oswald', sans-serif; 
+    color: #293241;
+}
+
+
+
+.cartProductMiniInfo i{
+    font-size: 20px;
+}
+
+.cartProductMiniInfo i:hover{
+    color: #56698A;
+}
+
+/* ###### TOTAL ##### */
+.total {
+    display: inline-block;
+    
+}
+
+.total h3{
+    color: #293241;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 32px;
+
+}
+
+.totalAmount{
+    color: #293241;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 72px;
+
+}
+
+
+/* ###### NOSOTROS ##### */
+
+.firstSection {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    
+}
+
+.firstSection h1{
+    font-family: 'Anton', sans-serif; 
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.firstSection p {
+    font-family: 'Oswald', sans-serif; 
+    font-size: 24px;   
+    margin-bottom: 30px;
+}
+
+.firstSection img{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+
+.secondSection {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 24px;   
+    margin-bottom: 30px;
+}
+
+.secondSection h2{
+    text-align: center;
+}
+
+.thirdSection{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+.thirdSection h2{
+        text-align: center;
+
+}
+
+.thirdSection button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+/* ###### CONTACTO ##### */
+
+.heroContacto {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#title1 {
+    width: 50%;
+    display: inline-block   
+}
+
+.heroContacto h1{
+    font-family: 'Anton', sans-serif; 
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    width: 50%;
+    float: right;
+}
+
+.heroContacto img{
+    display: inline-block;
+    max-height: 200px;
+    text-align: right;
+
+}
+
+fieldset {
+    display: block;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 0;
+}
+
+label {
+    font-family: 'Staatliches', cursive; 
+    color: #3D5A80;
+}
+
+.shortInput{
+    display: inline-block;
+    width: 49%;
+    
+}
+
+.shortInput input{
+    width: 100%;
+    border-radius: 10px;
+    height: 40px;
+    background-color: #90F1F4;
+    color: #293241;
+    text-align: left;
+    border-color: #98C1D9;
+}
+
+.longInput{
+    display: block;
+}
+
+.longInput input{
+    width: 98%;
+    float: left;
+    border-radius: 10px;
+    height: 40px;
+    background-color: #90F1F4;
+    color: #293241;
+    text-align: left;
+    border-color: #98C1D9;
+}
+
+input[type='email']::placeholder{ 
+    text-align: left; 
+}
+
+input[type='text']::placeholder{ 
+    text-align: left; 
+}
+
+.messageType{
+    margin-top: 60px;
+}
+
+.messageType h3{
+    font-family: 'Staatliches', cursive; 
+    color: #3D5A80;
+}
+
+select {
+    width: 350px;
+    height: 40px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 10px;
+    font-family: 'Staatliches', cursive; 
+    border-width: 3px;
+    padding: 5px;
+    border-color: #98C1D9;
+    background-color: #3D5A80;
+    color:  #90F1F4;
+    font-size: 16px;
+}
+
+.comments{
+    margin-top: 20px;
+    width 100%
+    display: block;
+}
+
+.comments textarea{
+    width: 100%;
+    font-family: 'Staatliches', cursive; 
+    border-width: 3px;
+    padding: 5px;
+    border-color: #98C1D9;
+    background-color: #90F1F4;
+    color: #293241;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.comments button {
+    float: right;
+}
+
+.afterForm {
+    margin-top: 60px;
+    display: block;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.afterForm p{
+    text-align: center;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 24px;
+}
+
+.afterForm img{
+    display: block;
+    margin-top: 20px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -100px;
+}
+
+/* ###### CAMISETAS ##### */
+
+.hero {
+    display: block;
+}
+
+.hero h1{
+    font-size: 56px;
+    font-family: 'Anton', sans-serif; 
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+}
+
+.imageCarrousel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.imageCarrousel img{
+    width: 200px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.imageCarrouselDestacado{
+    order: -1;
+    width: 100%;
+}
+
+.discountsTitles{
+    display: block;
+}
+
+.discountsTitles h2{
+    display: block;
+    font-size: 56px;
+    font-family: 'Staatliches', cursive;
+    width: 60%;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.discountsTitles p{
+    font-family: 'Oswald', sans-serif; 
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.discountCatalogue{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.discountCatalogue img{
+    border-radius: 10px;
+    width: 30%;
+}
+
+.discountProduct{
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.discountProductInfo{
+    display: inline-block;
+    padding: 20px;
+}
+
+.discountProductInfo h3{
+    font-family: 'Staatliches', cursive;
+    display: inline-block;
+    font-size: 32px;
+}
+
+.discountProductInfo i{
+    font-size: 24px;
+    display: inline-block;
+
+}
+
+.discountProductInfo i:hover{
+    color: #56698A;
+}
+
+.prices{
+    display: block;
+}
+
+.originalPrice{
+    font-family: 'Staatliches', cursive;
+    text-decoration: line-through;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.discountPrice{
+    font-family: 'Staatliches', cursive;
+    color: #EE6C4D;
+    font-size: 44px;
+    display: inline-block;
+}
+
+.sizes {
+    display: flex;
+}
+
+.btnSizeSelector {
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #E0FBFC;
+    border-color: #98C1D9;
+    font-family: 'Staatliches', cursive;
+    font-size: 16px;
+}
