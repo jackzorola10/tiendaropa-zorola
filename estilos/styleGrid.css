@@ -105,45 +105,73 @@
     /* ########## HEADER ########## */
     header{
         grid-area: menu;                  /*GRID INDEX*/
-    }
-    nav {
-        background-color: #ee6c4d;
-        display: grid;
-        grid-template-columns: 5% 95%;
+        z-index: 7; /*Esto es lo unico que hace que el banner no se suba*/
     }
     
     #logo{
         margin-left: 10px;
     }
-    .menu {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 10px 10px;
-        justify-content: end;
+            /*RESPONSIVE MENU*/
+    .mobileMenu{   
+        background-color: #ee6c4d;
+        display: grid;    /*ON OFF MENU*/
+        grid-template-columns: 5% 95%;
+        }
+    .burger{
+        text-align: right;
+        height: 70px;
+        line-height: 70px;
     }
-    ul {
-        padding: 10px;
-        font-family: 'Staatliches', cursive;    
-        color: #e0fbfc;
-        border-radius: 8px;
-        width: auto;
-        margin: auto 5px auto 5px;
-    } 
-    ul:hover{
-        background-color: #e03d15;
-    } 
-    i {
-        padding-left: 5px;
-    } 
-    ul li { /* No me jalo :c */
-        list-style-type: none; /* Quita los bullets */
-        background-color: darkblue;
+    .menu{
+        margin: 0 30px 0 0;
+        display: none;    /*Display for blocking and unblocking menu*/
+        width: 100%;
+    }
+    .menu a{
+        text-decoration: none;
+        color: #90F1F4;
+        margin: 0px 10px;
+        line-height: 70px;
+        display: block;
+        background-color: #293241;
+        border-bottom: 3px solid #90F1F4;
+        font-family: 'Oswald', sans-serif; 
+        font-size: 28px;
+        box-shadow: 0px 10px 10px #293241;
+    }
+    .menu a:last-child{
+        border-radius: 0px 0px 10px 10px;
+    }
+    .menu a:hover {
+        background-color: #475671;   
+    }
+    #toggle {
         display: none;
-        text-align: center;
-        width: 200px;
     } 
-    a {
-        color: #e0fbfc;
+    #burgerM{
+        color: #E0FBFC;
+    }
+    #burgerM:hover {
+        color: #293241;
+    }
+    #burgerM i{
+        margin-left: 5px;
+    }
+    label {
+        cursor: pointer;
+        margin: 0 20px;
+    }
+    .menu{
+        text-align: center;
+        z-index: 7;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+        /*DESKTOP MENU*/
+    .desktopMenu{
+        display: none;
     }
 
     /* ###### FOOTER ##### */
@@ -978,7 +1006,6 @@
         grid-template-columns: auto 95% auto;
         grid-template-rows: auto auto auto; 
     }
-
     .bodyCarrito{                                                      /* BODY OF CARRITO */
         background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
         background-repeat: repeat;
@@ -992,7 +1019,6 @@
         ;
         grid-template-columns: 1fr 1fr 1fr;
     }
-
     .bodyCamisetas{
         background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
         background-repeat: repeat;
@@ -1061,45 +1087,72 @@
     /* ########## HEADER ########## */
     header{
         grid-area: menu;                  /*GRID INDEX*/
+        z-index: 7; /*Esto es lo unico que hace que el banner no se suba*/
     }
-    nav {
-        background-color: #ee6c4d;
-        display: grid;
-        grid-template-columns: 5% 95%;
-    }
-    
+
     #logo{
         margin-left: 10px;
     }
-    .menu {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 10px 10px;
-        justify-content: end;
+        /*RESPONSIVE MENU*/
+    .mobileMenu{   
+        background-color: #ee6c4d;
+        display: grid;    /*ON OFF MENU*/
+        grid-template-columns: 5% 95%;
     }
-    ul {
-        padding: 10px;
-        font-family: 'Staatliches', cursive;    
-        color: #e0fbfc;
-        border-radius: 8px;
-        width: auto;
-        margin: auto 5px auto 5px;
-    } 
-    ul:hover{
-        background-color: #e03d15;
-    } 
-    i {
-        padding-left: 5px;
-    } 
-    ul li { /* No me jalo :c */
-        list-style-type: none; /* Quita los bullets */
-        background-color: darkblue;
+    .burger{
+        text-align: right;
+        height: 70px;
+        line-height: 70px;
+    }
+    .menu{
+        margin: 0 30px 0 0;
+        display: none;    /*Display for blocking and unblocking menu*/
+        width: 100%;
+    }
+    .menu a{
+        text-decoration: none;
+        color: #90F1F4;
+        margin: 0px 10px;
+        line-height: 70px;
+        display: block;
+        background-color: #293241;
+        border-bottom: 3px solid #90F1F4;
+        font-family: 'Oswald', sans-serif; 
+        font-size: 28px;
+        box-shadow: 0px 10px 10px #293241;
+    }
+    .menu a:last-child{
+        border-radius: 0px 0px 10px 10px;
+    }
+    .menu a:hover {
+        background-color: #475671;   
+    }
+    #toggle {
         display: none;
-        text-align: center;
-        width: 200px;
     } 
-    a {
-        color: #e0fbfc;
+    #burgerM{
+        color: #E0FBFC;
+    }
+    #burgerM:hover {
+        color: #293241;
+    }
+    #burgerM i{
+        margin-left: 5px;
+    }
+    label {
+        cursor: pointer;
+        margin: 0 20px;
+    }
+    .menu{
+        text-align: center;
+        z-index: 7;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+        /*DESKTOP MENU*/
+    .desktopMenu{
+        display: none;
     }
 
     /* ###### FOOTER ##### */
@@ -1165,13 +1218,14 @@
     /* ###### HERO ##### */ 
     .hero1 {
         grid-area: hero;                  /*GRID INDEX*/
-        display: subgrid;;
+        display: subgrid;
         grid-template-areas: 
             "banner"
             "titles"
         ;
         grid-template-columns: 100%;
         padding: 30px;
+;
     } 
     .bannerImg {  /*#### BANNER TRANSITION TABLET####*/
         grid-area: banner;
@@ -1853,11 +1907,15 @@
     /* ########## HEADER ########## */
     header{
         grid-area: menu;                  /*GRID INDEX*/
+        z-index: 7; /*Esto es lo unico que hace que el banner no se suba*/
     }
     nav {
         background-color: #ee6c4d;
         display: grid;
         grid-template-columns: 5% 95%;
+    }
+    .mobileMenu{
+        display: none;
     }
     
     #logo{
@@ -1882,13 +1940,6 @@
     } 
     i {
         padding-left: 5px;
-    } 
-    ul li { /* No me jalo :c */
-        list-style-type: none; /* Quita los bullets */
-        background-color: darkblue;
-        display: none;
-        text-align: center;
-        width: 200px;
     } 
     a {
         color: #e0fbfc;
